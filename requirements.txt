@@ -1,0 +1,3 @@
+SQLAlchemy==2.0.40
+redis==6.0.0
+pymongo==4.12.1

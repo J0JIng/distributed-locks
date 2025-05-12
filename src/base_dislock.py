@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 
 class DistributedLock(ABC):
     def __init__(self, name: str):
+        """Abstract class for distributed locks"""
         self.name = name
 
     @abstractmethod
@@ -13,5 +14,3 @@ class DistributedLock(ABC):
     def releaseLock(self)-> bool:
         """Release the lock. Returns True if successful."""
         pass
-
-
