@@ -1,6 +1,6 @@
 from src.base_dislock import DistributedLock
 
-class MongoDistributedLock(DistributedLock):
+class MySQLDistributedLock(DistributedLock):
     def __init__(self, name: str):
         self.name = name
 
